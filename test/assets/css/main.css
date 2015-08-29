@@ -3077,14 +3077,14 @@
 			#banner input[type="reset"]:hover,
 			#banner input[type="button"]:hover,
 			#banner .button:hover {
-				background-color: rgba(255, 255, 255, 0.1);
+				background-color: rgba(255, 255, 255, 0.15);
 			}
 
 			#banner input[type="submit"]:active,
 			#banner input[type="reset"]:active,
 			#banner input[type="button"]:active,
 			#banner .button:active {
-				background-color: rgba(255, 255, 255, 0.2);
+				background-color: rgba(255, 255, 255, 0.4);
 			}
 
 			#banner input[type="submit"].special,
