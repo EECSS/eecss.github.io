@@ -124,7 +124,7 @@
 
 	#banner {
 		background-attachment: scroll;
-		background-image: url("../../images/banner.jpg");
+		background-image: url("http://gaurusinc.com/wp-content/uploads/2014/12/electonica1-2000x1116_c.jpg"); /*url("../../images/banner.jpg");*/
 		background-position: auto;
 		background-repeat: no-repeat;
 		background-size: cover;

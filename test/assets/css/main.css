@@ -3030,13 +3030,15 @@
 	#banner {
 		background-attachment: scroll,							fixed;
 		background-color: #666;
-		background-image: url("images/overlay.png"), url("../../images/banner.jpg");
+		background-image: url("images/overlay.png"), url("http://gaurusinc.com/wp-content/uploads/2014/12/electonica1-2000x1116_c.jpg"); /*url("../../images/banner.jpg");*/
 		background-position: top left,						center center;
 		background-repeat: repeat,							no-repeat;
 		background-size: auto,							cover;
 		color: #fff;
+		font-weight: 500;
 		padding: 12em 0 20em 0;
 		text-align: center;
+
 	}
 
 		#banner :last-child {
@@ -3045,6 +3047,8 @@
 
 		#banner h2, #banner h3, #banner h4, #banner h5, #banner h6 {
 			color: #fff;
+			font-weight: 700;
+			font-family: Orbitron;
 		}
 
 		#banner h2 {
