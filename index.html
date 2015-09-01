@@ -197,8 +197,11 @@
 					<h2>Sign up to join our mailing list:</h2>
 					<!-- <p>The class is open to 7th through 12th graders and guest speaker events are open to all.</p> -->
 
-					<form>
+					<!-- <form>
 						<div class="row uniform 50%">
+							<div class="12u 12u(mobilep)">
+								<input type="text" name="name" id="name" placeholder="Full Name" />
+							</div>
 							<div class="8u 12u(mobilep)">
 								<input type="email" name="email" id="email" placeholder="Email Address" />
 							</div>
@@ -206,7 +209,31 @@
 								<input type="submit" value="Sign Up" class="fit" />
 							</div>
 						</div>
+					</form> -->
+
+					<form action="http://formspree.io/r.r.BUT.a..n.i+fromWEB@gmail.com"
+					      method="POST">
+						<div class="row uniform 50%">
+							<div class="12u 12u(mobilep)">
+								<input type="text" name="name" id="name" placeholder="Full Name" />
+							</div>
+							<div class="8u 12u(mobilep)">
+								<input type="email" name="_subject" id="email" placeholder="Email Address" />
+							</div>
+							<div class="4u 12u(mobilep)">
+								<input type="submit" value="Sign Up" class="fit" />
+							</div>
+							<input type="text" name="_gotcha" style="display:none" />
+						</div>
 					</form>
+
+					<!-- <form action="http://formspree.io/r.r.BUT.a..n.i+fromWEB@gmail.com"
+					      method="POST">
+					    <input type="text" name="name">
+					    <input type="email" name="_subject">
+					    <input type="submit" value="Send">
+					    <input type="text" name="_gotcha" style="display:none" />
+					</form> -->
 
 				</section>
 
