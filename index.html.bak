@@ -9,92 +9,43 @@
 		<title>EECSS | Home</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<meta name="theme-color" content="#d1000f">
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Orbitron" />
-		<!-- <link href="//cdn.muicss.com/mui-0.1.21/css/mui.min.css" rel="stylesheet" type="text/css" /> -->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 
 		<script type="text/javascript">
 	        // Wait for the page to load first
-	        window.onload = function() 
-	        {
-	        	if (window.location.hash == '#cta' || window.location.hash == '#signup') //signup isn't actually an ID; it's a fake id that we can catch and use to link to the cta WITH ANIMATIONS! :o
-	        	{
-	        		// Your code here...
-		            $('html,body').animate
-		            (
-			            {
-		        			scrollTop: $("#cta").offset().top
-		        		},
-		        		800//'slow'
-		        	);
+	        window.onload = function() {
 
-		        	$('#cta').illuminate
-		        	(
-		        		{
-		        			'intensity': '0.99',
-		        			'color': '#e89980',
-							'blink': 'false',
-							'blinkSpeed': '1000',
-							'outerGlow': 'true',
-							'outerGlowSize': '200px',
-							'outerGlowColor': '#f89980'
-		        		}
-		        	);
-	        	}
+	          //Get a reference to the link on the page
+	          // with an id of "mylink"
+	          var a = document.getElementById("signupLink");
 
-	          	//Get a reference to the link on the page
-	          	// with an id of "mylink"
-	          	var a = document.getElementById("signupLink");
+	          //Set code to run when the link is clicked
+	          // by assigning a function to "onclick"
+	          a.onclick = function() {
 
-	          	//Set code to run when the link is clicked
-	          	// by assigning a function to "onclick"
-	          	a.onclick = function() 
-	          	{
+	            // Your code here...
+	            $('html,body').animate
+	            (
+		            {
+	        			scrollTop: $("#cta").offset().top
+	        		},
+	        		1200//'slow'
+	        	);
 
-		            // Your code here...
-		            $('html,body').animate
-		            (
-			            {
-		        			scrollTop: $("#cta").offset().top
-		        		},
-		        		1200//'slow'
-		        	);
+	        	//alert("HI");
 
-		        	$('#cta').illuminate
-		        	(
-		        		{
-		        			'intensity': '0.99',
-		        			'color': '#e89980',
-							'blink': 'true',
-							'blinkSpeed': '1000',
-							'outerGlow': 'true',
-							'outerGlowSize': '200px',
-							'outerGlowColor': '#f89980'
-		        		}
-		        	);
-
-		        	//alert("HI");
-
-		            //If you don't want the link to actually 
-		            // redirect the browser to another page,
-		            // "google.com" in our example here, then
-		            // return false at the end of this block.
-		            // Note that this also prevents event bubbling,
-		            // which is probably what we want here, but won't 
-		            // always be the case.
-		            return false;
-	        	}
-
-	        	var b = document.getElementById("cta");
-
-	        	b.onclick = function()
-        		{
-        			//alert("potato");
-        			$('#cta').illuminateDie();
-        		}
+	            //If you don't want the link to actually 
+	            // redirect the browser to another page,
+	            // "google.com" in our example here, then
+	            // return false at the end of this block.
+	            // Note that this also prevents event bubbling,
+	            // which is probably what we want here, but won't 
+	            // always be the case.
+	            return false;
+	          }
 	        }
     	</script>
 
@@ -108,8 +59,6 @@
 		  ga('send', 'pageview');
 
 		</script>
-
-		<!-- <script src="//cdn.muicss.com/mui-0.1.21/js/mui.min.js"></script> -->
 	</head>
 	<body class="landing">
 		<div id="page-wrapper">
@@ -248,11 +197,8 @@
 					<h2>Sign up to join our mailing list:</h2>
 					<!-- <p>The class is open to 7th through 12th graders and guest speaker events are open to all.</p> -->
 
-					<!-- <form>
+					<form>
 						<div class="row uniform 50%">
-							<div class="12u 12u(mobilep)">
-								<input type="text" name="name" id="name" placeholder="Full Name" />
-							</div>
 							<div class="8u 12u(mobilep)">
 								<input type="email" name="email" id="email" placeholder="Email Address" />
 							</div>
@@ -260,34 +206,7 @@
 								<input type="submit" value="Sign Up" class="fit" />
 							</div>
 						</div>
-					</form> -->
-
-					<form action="//formspree.io/E............vE..r.gR.eE..N....E..C..S......S+fromWebsite@gmail.com"
-					      method="POST">
-						<div class="row uniform 50%">
-							<div class="12u 12u(mobilep)">
-								<!-- <input type="text" class="mui-form-control" name="name" id="name" placeholder="Full Name"> -->
-								<input type="text" name="name" id="name" placeholder="Full Name" />
-							</div>
-							<div class="8u 12u(mobilep)">
-								<!-- <input type="email" class="mui-form-control" name="_subject" id="email" placeholder="Email Address"> -->
-								<input type="email" name="_subject" id="email" placeholder="Email Address" />
-							</div>
-							<div class="4u 12u(mobilep)">
-								<!-- <button type="submit" class="mui-btn mui-btn-default">Sign Up</button> -->
-								<input type="submit" value="Sign Up" class="fit" />
-							</div>
-							<input type="text" name="_gotcha" style="display:none" />
-						</div>
 					</form>
-
-					<!-- <form action="http://formspree.io/r.r.BUT.a..n.i+fromWEB@gmail.com"
-					      method="POST">
-					    <input type="text" name="name">
-					    <input type="email" name="_subject">
-					    <input type="submit" value="Send">
-					    <input type="text" name="_gotcha" style="display:none" />
-					</form> -->
 
 				</section>
 
@@ -317,7 +236,6 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-			<script src="assets/js/jquery.illuminate.0.7.min.js"></script>
 
 	</body>
 </html>
