@@ -24,6 +24,68 @@
 		  ga('send', 'pageview');
 
 		</script>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="assets/js/responsiveslides.min.js"></script>
+
+		<script>
+		  $(function() {
+		    $(".rslides").responsiveSlides();
+		  });
+
+		  // $(".rslides").responsiveSlides({
+		  //   auto: true,             // Boolean: Animate automatically, true or false
+		  //   speed: 500,            // Integer: Speed of the transition, in milliseconds
+		  //   timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
+		  //   pager: true,           // Boolean: Show pager, true or false
+		  //   nav: true,             // Boolean: Show navigation, true or false
+		  //   random: false,          // Boolean: Randomize the order of the slides, true or false
+		  //   pause: true,           // Boolean: Pause on hover, true or false
+		  //   pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+		  //   prevText: "Previous",   // String: Text for the "previous" button
+		  //   nextText: "Next",       // String: Text for the "next" button
+		  //   maxwidth: "",           // Integer: Max-width of the slideshow, in pixels
+		  //   navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+		  //   manualControls: "",     // Selector: Declare custom pager navigation
+		  //   namespace: "rslides",   // String: Change the default namespace used
+		  //   before: function(){},   // Function: Before callback
+		  //   after: function(){}     // Function: After callback
+		  // });
+		</script>
+
+		<style media="screen" type="text/css">
+			.rslides {
+			  position: relative;
+			  list-style: none;
+			  overflow: hidden;
+			  width: 100%;
+			  padding: 0;
+			  margin: 0;
+			  }
+
+			.rslides li {
+			  -webkit-backface-visibility: hidden;
+			  position: absolute;
+			  display: none;
+			  width: 100%;
+			  left: 0;
+			  top: 0;
+			  }
+
+			.rslides li:first-child {
+			  position: relative;
+			  display: block;
+			  float: left;
+			  }
+
+			.rslides img {
+			  display: block;
+			  height: auto;
+			  float: left;
+			  width: 100%;
+			  border: 0;
+			  }
+		</style>
 	</head>
 	<body>
 		<div id="page-wrapper">
@@ -55,9 +117,9 @@
 					<div class="box">
 						<span class="image featured"><img src="http://newshour-tc.pbs.org/newshour/wp-content/uploads/2014/05/5092254079_efe3f7d220_o.jpg" alt="" /></span>
 						<h3>General Event Details</h3>
-						<p>Cep risus aliquam gravida cep ut lacus amet. Adipiscing faucibus nunc placerat. Tempus adipiscing turpis non blandit accumsan eget lacinia nunc integer interdum amet aliquam ut orci non col ut ut praesent. Semper amet interdum mi. Phasellus enim laoreet ac ac commodo faucibus faucibus. Curae ante vestibulum ante. Blandit. Ante accumsan nisi eu placerat gravida placerat adipiscing in risus fusce vitae ac mi accumsan nunc in accumsan tempor blandit aliquet aliquet lobortis. Ultricies blandit lobortis praesent turpis. Adipiscing accumsan adipiscing adipiscing ac lacinia cep. Orci blandit a iaculis adipiscing ac. Vivamus ornare laoreet odio vis praesent nunc lorem mi. Erat. Tempus sem faucibus ac id. Vis in blandit. Nascetur ultricies blandit ac. Arcu aliquam. Accumsan mi eget adipiscing nulla. Non vestibulum ac interdum condimentum semper commodo massa arcu.</p>
+						<p>In addition to offering classes at local libraries, The Evergreen Engineering and Computer Science Society <b>(EECSS)</b> occasionally holds guest speaker sessions with some of the top tech minds in Silicon Valley. These sessions, also held at local libraries, are open to the public and are a valuable opportunity to listen to and converse with professionals in engineering fields who have extensive academic and industry experience. Also be sure to stick around for the Question & Answer session after the event! Below are some past guest speaker events as well as planned events for the future. Be sure to RSVP by emailing <a href="mailto:evergreen.ecss+fromWebsite@gmail.com">evergreen.ecss@gmail.com</a> to save a spot!</p>
 
-						<section class="special features">
+<!-- 						<section class="special features">
 							<div class="features-row">
 									<div class="6u 12u(mobilep)">
 										<span class="icon major fa-bolt accent2"></span>
@@ -70,13 +132,13 @@
 										<p>Integer volutpat ante et accumsan commophasellus sed aliquam feugiat lorem aliquet ut enim rutrum phasellus iaculis accumsan dolore magna aliquam veroeros.</p>
 									</div>
 							</div>
-						</section>
+						</section> -->
 
 						<hr />
 
 						<header>
 							<h3>First Guest Speaker Event: Dr. Hamid Rategh</h3>
-							<p>At the Evergreen Branch Public Library on Saturday, October 3<sup>rd</sup> at 1:15 PM.</p>
+							<p>At the <a href="https://www.google.com/maps/place/Evergreen+Branch+Library/@37.366278,-121.857909,13z/data=!4m6!1m3!3m2!1s0x808e2d76dc49bfcb:0xe44622f30304bc5a!2sEvergreen+Branch+Library!3m1!1s0x808e2d76dc49bfcb:0xe44622f30304bc5a"> Evergreen Branch Public Library</a> on Saturday, October 3<sup>rd</sup> at 1:15 PM.</p>
 						</header>
 
 						<div class="row">
@@ -88,14 +150,30 @@
 							<!-- </section> -->
 							</div>
 							<div class="8u 12u(mobilep)">
+								<h3>Event Details</h3>
+								<p>The Evergreen Engineering and Computer Science Society <b>(EECSS)</b> presents its first guest speaker event featuring Dr. Hamid Rategh. Come to the event to hear: Dr. Rategh's experiences as a student, teacher, and professional, and his story to success.</p>
 								<h3>About the Speaker</h3>
-								<p>Adipiscing faucibus nunc placerat. Tempus adipiscing turpis non blandit accumsan eget lacinia nunc integer interdum amet aliquam ut orci non col ut ut praesent. Semper amet interdum mi. Phasellus enim laoreet ac ac commodo faucibus faucibus. Curae lorem ipsum adipiscing ac. Vivamus ornare laoreet odio vis praesent.</p>
+								<p>Dr. Hamid Rategh was born in Iran and received his undergraduate education in Electrical Engineering at Sharif University of Technology. He later moved to the US for his MS in Biomedical Engineering at Case Western Reserve University and Ph.D. in Electrical Engineering at Stanford University. He has taught as a part-time professor at Stanford University, and is currently the Vice President of Engineering at GenapSys Inc., a Bay Area located biotechnology company.</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="12u 12u(mobilep)">
+								<ul class="rslides">
+								  <li><img src="images/GE1_1.jpg" alt=""></li>
+								  <li><img src="images/GE1_2.jpg" alt=""></li>
+								  <li><img src="images/GE1_3.jpg" alt=""></li>
+								  <li><img src="images/GE1_4.jpg" alt=""></li>
+								  <li><img src="images/GE1_5.jpg" alt=""></li>
+								  <li><img src="images/GE1_6.jpg" alt=""></li>
+								  <li><img src="images/GE1_7.jpg" alt=""></li>
+								  <li><img src="images/GE1_8.jpg" alt=""></li>
+								</ul>
 							</div>
 						</div>
 					</div>
 				</section>
 
-				<section class="box special features">
+<!-- 				<section class="box special features">
 						<div class="features-row">
 							<section>
 								<span class="icon major fa-bolt accent2"></span>
@@ -135,7 +213,7 @@
 							</div>
 						</div>
 
-				</section>
+				</section> -->
 
 			<!-- Footer -->
 				<footer id="footer">
@@ -164,6 +242,6 @@
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/responsiveslides.min.js"></script>
 	</body>
 </html>
